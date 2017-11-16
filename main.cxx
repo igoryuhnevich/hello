@@ -1,30 +1,21 @@
-/*
- * main.cxx
- *
- *  Created on: 11 нояб. 2017 г.
- *      Author: Julia
- */
-#include <cstdlib>
+//#include <cstdlib>
 #include <iostream>
-#include <string>
+//#include <string>
 
-
-
-int main(int /*argc*/, char* /*argv*/[])
+int main(int /*argc*/, char* /*argv*/ [])
 
 {
-	using namespace std ;
+  using namespace std;
 
-	string output_phrase("hello word");
+  string output_phrase("hello world ");
 
-	cout << output_phrase << endl;
+  cout << output_phrase << endl;
 
-	bool is_good = cout.good();
+  cout << "...and the first was the word" << endl;
 
-	int result = is_good ? EXIT_SUCCESS : EXIT_FAILURE;
+  bool is_good = cout.good();
 
-	return  result;
+  int result = is_good ? EXIT_SUCCESS : EXIT_FAILURE;
+
+  return result;
 }
-
-
-
